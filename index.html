@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Movies</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1 text-center mx-4">Movies!</h1>
+      <div class="row justify-content-end">
+        <div class="col-4 left">
+          <input class="form-control mb-3" id="movieName" type="text" placeholder="movie name">
+          <input class="form-control mb-3" id="rating" type="text" placeholder="rating">
+          <select  class="form-select mb-3" id="category">
+            <option value="" disabled selected hidden="true">-select-</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Animation">Animation</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Family">Family</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Action">Action</option>
+            <option value="History">History</option>
+            <option value="War">War</option>
+          </select>
+          <select class="form-select mb-3" id="selectType">
+            <option value="updown">Up to down</option>
+            <option value="down">Down to up</option>
+          </select>
+
+          <button class="btn btn-primary" id="search">Search</button>
+        </div> <!-- End of left -->
+        <div class="col-8">
+          <div class="row">
+            <div class="h3">Search result: <span id="result">0</span></div>
+            <div class="alert alert-primary">Chap tomonni movie qidirish uchun ishlating</div>
+          </div>
+
+          <div class="row cards justify-content-between" id="cards">
+            ...
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/movies.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
